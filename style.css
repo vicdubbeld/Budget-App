@@ -8,3 +8,7 @@ main {
     min-height: 100vh;
     background: linear-gradient(to right top, #8cdf65, #98e0d1);
 }
+
+h2 {
+    color: white;
+}

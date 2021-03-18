@@ -10,25 +10,35 @@
 </head>
 <body>
     <h1>$ Budg</h1>
-
     <main>
         <br>
-        <div class="input-group mb-3">
-            <span class="input-group-text">$</span>
-            <input type="text" class="for m-control" aria-label="Amount (to the nearest dollar)">
-            <span class="input-group-text">.00</span>
-        </div>
+        <!-- Add income/expense  -->
+        <div class="input-group">
+            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <button type="button" class="btn btn-outline-secondary">Submit</button>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Expense</a></li>
+              <li><a class="dropdown-item" href="#">Income</a></li>
+            </ul>
+          </div>
+
 
         <div class="container">
             <div class="row">
             <div class="col-sm">
                 <h2>Expenses</h2>
+                <h2>$</h2>
             </div>
             <div class="col-sm">
                 <h2>Remaining</h2>
+                <h2>$</h2>
             </div>
             <div class="col-sm">
                 <h2>Income</h2>
+                <h2>$</h2>
             </div>
             </div>
         </div>
