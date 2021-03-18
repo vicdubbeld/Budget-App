@@ -6,42 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>$ Budg</h1>
+    <h1>Budg.</h1>
     <main>
-        <br>
-        <!-- Add income/expense  -->
         <div class="input-group">
             <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
             <button type="button" class="btn btn-outline-secondary">Submit</button>
             <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle Dropdown</span>
+            <span class="visually-hidden">Toggle Dropdown</span>
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#">Expense</a></li>
-              <li><a class="dropdown-item" href="#">Income</a></li>
+            <li><a class="dropdown-item" href="#">Expense</a></li>
+            <li><a class="dropdown-item" href="#">Income</a></li>
             </ul>
-          </div>
-
-
-        <div class="container">
-            <div class="row">
-            <div class="col-sm">
-                <h2>Expenses</h2>
-                <h2>$</h2>
-            </div>
-            <div class="col-sm">
-                <h2>Remaining</h2>
-                <h2>$</h2>
-            </div>
-            <div class="col-sm">
-                <h2>Income</h2>
-                <h2>$</h2>
-            </div>
-            </div>
         </div>
+        <section class="workspace">
+            <!-- Add income/expense  -->
+
+
+            <div class="container">
+                <div class="row">
+                <div class="col-sm">
+                    <h2>Expenses</h2>
+                    <h2>$</h2>
+                </div>
+                <div class="col-sm">
+                    <h2>Remaining</h2>
+                    <h2>$</h2>
+                </div>
+                <div class="col-sm">
+                    <h2>Income</h2>
+                    <h2>$</h2>
+                </div>
+                </div>
+            </div>
+        </section>
     </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
