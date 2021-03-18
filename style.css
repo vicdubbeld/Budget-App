@@ -15,6 +15,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
 }
 h1 {
     color: #ffffff;
@@ -35,5 +38,18 @@ h1 {
     z-index: 2;
     backdrop-filter: blur(2rem);
     display: flex;
+    border-color: rgb(218, 36, 235);
+    border-width: 5px;
+    border-style: solid;
 }
-
+.row {
+    border-color: blue;
+    border-width: 5px;
+    border-style:solid
+}
+.col-sm{
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    height: 250px;
+}
