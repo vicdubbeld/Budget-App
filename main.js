@@ -30,3 +30,4 @@ function clearInput(inputsArray) {
   });
 }
 console.log(ENTRY_LIST);
+console.log("hi");
