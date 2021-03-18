@@ -1,33 +1,42 @@
-// Main cards display
-const expenses1 = document.querySelector(".title .expenses-value");
-const remaining1 = document.querySelector(".remaining-value");
-const income1 = document.querySelector(".income-value");
-
-// input expense section
-const addExpense = document.querySelector("#expense-button");
-const expenseAmount = document.getElementsByID("expense-input");
-
-// input income section
-const addIncome = document.querySelector("#income-button");
-const incomeAmount = document.getElementsByID("income-input");
-
-let ENTRY_LIST = [];
-
-addIncome.addEventListener("click", function () {
-  if (!incomeAmount.value) return;
-  let income = {
-    type: "income",
-    amount: parseFloat(incomeAmount.value),
-  };
-  ENTRY_LIST.push(income);
-  updateUI();
-  clearInput(incomeAmount);
-});
-
-function clearInput(inputsArray) {
-  inputsArray.forEach((input) => {
-    input.value = "";
-  });
+class UI {
+  constructor() {
+    this.budgetFeedback = document.querySelector(".budget-feedback");
+    this.expenseFeedback = document.querySelector(".expense-feedback");
+    this.budgetForm = document.getElementById("budget-form");
+    this.budgetInput = document.getElementById("budget-input");
+    this.budgetAmount = document.getElementById("budget-amount");
+    this.expenseAmount = document.getElementById("expense-amount");
+    this.balance = document.getElementById("balance");
+    this.balanceAmount = document.getElementById("balance-amount");
+    this.expenseForm = document.getElementById("expense-form");
+    this.expenseInput = document.getElementById("expense-input");
+    this.amountInput = document.getElementById("amount-input");
+    this.expenseList = document.getElementById("expense-list");
+    this.itemList = [];
+    this.itemID = 0;
+  }
 }
-console.log(ENTRY_LIST);
-console.log("hi");
+
+function eventListeners() {
+  const budgetForm = document.getElementById("budget-form");
+  const expenseForm = document.getElementById("expense-form");
+  const expenseList = document.getElementById("expense-list");
+
+  //   new instance of UI CLASS
+  const ui = new UI();
+
+  //   budget form submit
+  budgetForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+  });
+  //   expense form submit
+  expenseForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+  });
+  //   expense click
+  expenseList.addEventListener("click", function (event) {});
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  eventListeners();
+});
