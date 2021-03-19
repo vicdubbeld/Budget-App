@@ -130,7 +130,9 @@ function eventListeners() {
     ui.submitExpenseForm();
   });
   //   expense click
-  expenseList.addEventListener("click", function (event) {});
+  expenseList.addEventListener("click", function (event) {
+    console.log(event.target);
+  });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
