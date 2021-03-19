@@ -1,5 +1,7 @@
 # Budg
 
+Live Demo: https://budg-tracking.herokuapp.com/
+
 Budg is a <strong>very</strong> simplified take on budgeting money. This web app will allow users to:
 
 - Input their income
